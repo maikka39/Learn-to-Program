@@ -1,0 +1,114 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #060612;
+
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+}
+
+@media screen and (max-width: 480px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    html,
+    body {
+        min-width: 320px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+/*
+@media screen and (max-width: 736px) {
+
+	html,
+	body {
+		overflow-x: hidden;
+	}
+}
+*/
+
+@media screen and (max-width: 980px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 11.5pt;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 13pt;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media only screen and (max-width: 736px) {
+    .mobile_hidden {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 736px) {
+    .desktop_hidden {
+        display: none !important;
+    }
+}
+
+.nocroll {
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}

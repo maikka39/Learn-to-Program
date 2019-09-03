@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/main.css" media="all">
+    <link rel="stylesheet" href="assets/styles/nav.css" media="all">
+    <link rel="stylesheet" href="assets/styles/index.css" media="all">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://maik.dev/projects/learntoprogram">
+
+    <title>Learn to Program</title>
+    <!--
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="@maik_dev" />
+-->
+</head>
+
+<body>
+    <div id="top"></div>
+    <nav>
+        <div href="#nav_toggle" class="nav_toggle desktop_hidden dropbtn" onclick="toggle_mobile_menu()">
+            <div class="button_container dropbtn">
+                <span id="open_mobile_nav" class="dropbtn">&#9776;</span>
+                <span id="close_mobile_nav" class="dropbtn hidden">&#10005;</span>
+            </div>
+        </div>
+        <a class="logo" href="/">Learn to Program</a>
+        <ul class="items mobile_hidden" id="navbar_items">
+            <li class="item active"><a href="/">Home</a></li>
+            <li class="item"><a href="#">Learn</a></li>
+            <li class="item"><a href="/pricing.html">Pricing</a></li>
+            <li class="item"><a href="/contact.html">Contact</a></li>
+            <!--
+            <li>
+                <div class="item language dropbtn" onclick="select_language(this)">Language
+                    <a class="subitem dropdown-content hidden" href="/">English</a>
+                    <a class="subitem dropdown-content hidden" href="/nl/">Nederlands</a>
+                </div>
+            </li>
+-->
+        </ul>
+    </nav>
+
+    <div style='height: 200vh; background: green;'></div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggle_mobile_menu() {
+            document.getElementById("navbar_items").classList.toggle("mobile_hidden");
+            document.getElementById("open_mobile_nav").classList.toggle("hidden");
+            document.getElementById("close_mobile_nav").classList.toggle("hidden");
+
+            document.getElementsByTagName("body")[0].classList.toggle("nocroll");
+        };
+
+        function close_menus() {
+            //var dropdowns = document.getElementsByClassName("dropdown-content");
+            //var i;
+            //for (i = 0; i < dropdowns.length; i++) {
+            //    var openDropdown = dropdowns[i];
+            //    if (!openDropdown.classList.contains('hidden')) {
+            //        openDropdown.classList.add('hidden');
+            //    }
+            //};
+            if (document.getElementsByTagName("body")[0].classList.contains('nocroll')) {
+                document.getElementsByTagName("body")[0].classList.remove('nocroll');
+            };
+            if (!document.getElementById("navbar_items").classList.contains('mobile_hidden')) {
+                document.getElementById("navbar_items").classList.add("mobile_hidden");
+            };
+            if (document.getElementById("open_mobile_nav").classList.contains('hidden')) {
+                document.getElementById("open_mobile_nav").classList.remove('hidden');
+                document.getElementById("close_mobile_nav").classList.add('hidden');
+            };
+        };
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                close_menus();
+            }
+        };
+
+        window.onresize = function() {
+            close_menus();
+        };
+    </script>
+
+
+</body></html>

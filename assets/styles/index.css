@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "projects"
+        "contact"
+        "footer";
+
+    /*    perspective: 2px;*/
+    /*    height: 100vh;*/
+    /* Doesn't work well on safari.. */
+    background: white;
+}

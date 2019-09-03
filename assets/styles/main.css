@@ -6,9 +6,13 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #060612;
-
     overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: background-color 0.15s ease;
 }
 
 @font-face {
@@ -87,9 +91,20 @@ body {
     }
 }
 
+
+
 .hidden {
     display: none !important;
 }
+
+.nocroll {
+    overflow: hidden;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
 
 @media only screen and (max-width: 736px) {
     .mobile_hidden {
@@ -101,14 +116,4 @@ body {
     .desktop_hidden {
         display: none !important;
     }
-}
-
-.nocroll {
-    overflow: hidden;
-}
-
-body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-behavior: smooth;
 }

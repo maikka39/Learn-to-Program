@@ -72,6 +72,72 @@ body > nav > .items > .item > a {
     padding: 0 1em;
 }
 
+body > nav > .items > .item:hover {
+    background-color: #c2c2c2;
+}
+
+body > nav > .items > .item:hover > .submenu {
+    clip-path: inset(0% 0% 0% 0%)
+}
+
+body > nav > .items > .item > .submenu {
+    transition: clip-path 0.25s;
+    clip-path: inset(0% 0% 100% 0%);
+    position: absolute;
+    background: #c2c2c2;
+    left: 0;
+    padding: 1em 3em;
+    width: calc(100vw - 2 * 3em);
+
+    /*    Is set to flex on hover    */
+    display: flex;
+    /*    display: none;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*    align-items: flex-start;*/
+    align-items: stretch;
+}
+
+body > nav > .items > .item > .submenu > .column {
+    display: block;
+    margin: 0 1em;
+    flex-grow: 1;
+}
+
+body > nav > .items > .item > .submenu > .column > span {
+    font-size: 1em;
+    font-weight: 800;
+}
+
+body > nav > .items > .item > .submenu > .column > ul {
+    list-style: none;
+    padding-left: 1em;
+    min-width: 10em;
+    /*    Use grid because of a bug in flexbox    */
+    /*    https://stackoverflow.com/a/33899301/9146982    */
+    /*    Also, this works beter as you can specify the amount of items below each other instead of having to calculate the height    */
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
+}
+
+body > nav > .items > .item > .submenu > .column > ul > li {
+    margin-right: 1em;
+    background-color: transparent;
+}
+
+body > nav > .items > .item > .submenu > .column > ul > li:hover {
+    background-color: #cccccc;
+}
+
+body > nav > .items > .item > .submenu > .column > ul > li > a {
+    text-decoration: none;
+    display: block;
+    line-height: 1.5em;
+    padding: 0.5em;
+    color: #000000;
+}
 
 @media only screen and (max-width: 736px) {
     body > nav {

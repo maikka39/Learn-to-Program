@@ -35,20 +35,16 @@
 <body>
     <div id="top"></div>
     <nav>
-        <div class="nav_toggle desktop_hidden dropbtn" onclick="toggle_mobile_menu()">
-            <div class="button_container dropbtn">
-                <span id="open_mobile_nav" class="dropbtn">&#9776;</span>
-                <span id="close_mobile_nav" class="dropbtn hidden">&#10005;</span>
-            </div>
-        </div>
+        <input class="nav_toggle_input hidden" id="nav_toggle_mobile" type="checkbox">
+        <label class="nav_toggle desktop_hidden" for="nav_toggle_mobile"></label>
         <a class="logo" href="/">Learn to Program</a>
-        <ul class="items mobile_hidden" id="navbar_items">
+        <ul class="items">
             <li class="item active"><a href="/">Home</a></li>
             <li class="item">
                 <a href="#">Learn</a>
                 <div class="submenu mobile_hidden">
                     <div class="column capitalize">
-                        <span>Subjects</span>
+                        <span><a href="#">Subjects</a></span>
                         <ul>
                             <li><a href="#">Full catalog</a></li>
                             <li><a href="#">Web development</a></li>
@@ -59,7 +55,7 @@
                         </ul>
                     </div>
                     <div class="column">
-                        <span>Languages</span>
+                        <span><a href="#">Languages</a></span>
                         <ul>
                             <li><a href="#">Python</a></li>
                             <li><a href="#">Java</a></li>
@@ -69,7 +65,7 @@
                         </ul>
                     </div>
                     <div class="column">
-                        <span>Frameworks</span>
+                        <span><a href="#">Frameworks</a></span>
                         <ul>
                             <li><a href="#">Vue.js</a></li>
                             <li><a href="#">ReactJS</a></li>
@@ -80,14 +76,6 @@
             </li>
             <li class="item"><a href="/pricing.html">Pricing</a></li>
             <li class="item"><a href="/contact.html">Contact</a></li>
-            <!--
-            <li>
-                <div class="item language dropbtn" onclick="select_language(this)">Language
-                    <a class="subitem dropdown-content hidden" href="/">English</a>
-                    <a class="subitem dropdown-content hidden" href="/nl/">Nederlands</a>
-                </div>
-            </li>
--->
         </ul>
     </nav>
     <header>
@@ -96,55 +84,6 @@
 
     <div style='height: 200vh; background: green;'></div>
 
-
-
-
-
-
-
-
-
-
-    <script>
-        function toggle_mobile_menu() {
-            document.getElementById("navbar_items").classList.toggle("mobile_hidden");
-            document.getElementById("open_mobile_nav").classList.toggle("hidden");
-            document.getElementById("close_mobile_nav").classList.toggle("hidden");
-
-            document.getElementsByTagName("body")[0].classList.toggle("nocroll");
-        };
-
-        function close_menus() {
-            //var dropdowns = document.getElementsByClassName("dropdown-content");
-            //var i;
-            //for (i = 0; i < dropdowns.length; i++) {
-            //    var openDropdown = dropdowns[i];
-            //    if (!openDropdown.classList.contains('hidden')) {
-            //        openDropdown.classList.add('hidden');
-            //    }
-            //};
-            if (document.getElementsByTagName("body")[0].classList.contains('nocroll')) {
-                document.getElementsByTagName("body")[0].classList.remove('nocroll');
-            };
-            if (!document.getElementById("navbar_items").classList.contains('mobile_hidden')) {
-                document.getElementById("navbar_items").classList.add("mobile_hidden");
-            };
-            if (document.getElementById("open_mobile_nav").classList.contains('hidden')) {
-                document.getElementById("open_mobile_nav").classList.remove('hidden');
-                document.getElementById("close_mobile_nav").classList.add('hidden');
-            };
-        };
-
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                close_menus();
-            }
-        };
-
-        window.onresize = function() {
-            close_menus();
-        };
-    </script>
 
 
 </body></html>

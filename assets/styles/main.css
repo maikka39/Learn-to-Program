@@ -6,9 +6,15 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.04em;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
+}
+
+p {
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
 }
 
 * {

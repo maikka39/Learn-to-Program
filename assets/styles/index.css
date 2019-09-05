@@ -11,6 +11,7 @@ body > .support {
     clip-path: circle(2.5em at calc(100% - 3em) calc(100% - 3em));
     transition: all 0.25s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body > .support:after {
@@ -36,8 +37,8 @@ body > .support:after {
     position: absolute;
     color: #ffffff;
     font-size: 3em;
-    right: 0.45em;
-    bottom: 0.45em;
+    right: 0.5em;
+    bottom: 0.5em;
 }
 
 body > .support:hover {
@@ -61,4 +62,11 @@ body > .support:hover > * {
 body > .support > h1 {
     font-size: 2em;
     margin: 0 0 0.5em;
+}
+
+
+body > .support > p a {
+    text-decoration: underline;
+    font-weight: 800;
+    color: inherit;
 }

@@ -8,6 +8,7 @@ body {
 }
 
 body {
+    position: relative;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.04em;
     overflow-x: hidden;
@@ -148,26 +149,34 @@ align-content: center
 
 
 
-
-
-
-body > .support {
-    position: fixed;
-    right: 3em;
+body > .content > .support {
+    position: sticky;
+    /*    right: 3em;*/
+    /*    top: calc(100vh - 20em);*/
     bottom: 3em;
+    display: flex;
+    justify-content: flex-end;
     /*    background: #ffd600;*/
+}
+
+body > .content > .support > .content {
+    position: relative;
+    width: 30vw;
+    margin: 3em;
+    margin-top: -6em;
     background: #ff6d00;
     padding: 2em;
     border-radius: 20px;
     border-bottom-right-radius: 0;
-    width: 30vw;
+    /*    width: 30vw;*/
     clip-path: circle(2.5em at calc(100% - 3em) calc(100% - 3em));
     transition: all 0.25s ease-in-out;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body > .support:after {
+body > .content > .support > .content:after {
     /*    content: "\260E";*/
     content: " ";
     width: 1em;
@@ -194,31 +203,31 @@ body > .support:after {
     bottom: 0.5em;
 }
 
-body > .support:hover {
+body > .content > .support > .content:hover {
     background: #ff6d00;
     clip-path: circle(75%);
     cursor: default;
 }
 
-body > .support:hover:after {
+body > .content > .support > .content:hover:after {
     background: transparent;
 }
 
-body > .support > * {
+body > .content > .support > .content > * {
     color: transparent;
 }
 
-body > .support:hover > * {
+body > .content > .support > .content:hover > * {
     color: #ffffff;
 }
 
-body > .support > h1 {
+body > .content > .support > .content > h1 {
     font-size: 2em;
     margin: 0 0 0.5em;
 }
 
 
-body > .support > p a {
+body > .content > .support > .content > p a {
     text-decoration: underline;
     font-weight: 800;
     color: inherit;

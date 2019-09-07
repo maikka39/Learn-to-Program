@@ -61,7 +61,7 @@ body > header > .container .typewriter .typewriter-text {
     white-space: nowrap;
     letter-spacing: .15em;
     animation:
-        typing 2.5s steps(7, end),
+        typing calc(0.11666s * 7) steps(7, end),
         blink-caret .5s step-end infinite;
 }
 

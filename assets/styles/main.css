@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=fallback');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html,
 body {
     margin: 0;
@@ -19,14 +22,6 @@ p {
 
 * {
     transition: background-color 0.15s ease;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
 }
 
 @media screen and (max-width: 480px) {
@@ -116,6 +111,26 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    /*
+    display: flex;
+justify-content: center;
+align-content: center
+*/
+}
+
+.parallax:after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
 }
 
 
@@ -130,6 +145,10 @@ p {
         display: none !important;
     }
 }
+
+
+
+
 
 
 body > .support {

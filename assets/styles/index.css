@@ -1,1 +1,106 @@
+body > header {
+    position: relative;
+    height: 100vh;
+    /*    background: rgba(6, 6, 18, 0.95);*/
+}
 
+body > .parallax:after {
+    background-size: cover;
+    /*    background-image: url("/assets/images/banner.webp");*/
+    z-index: -1;
+}
+
+body > header > .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /*    align-items: center;*/
+    align-items: flex-end;
+    align-content: center;
+    width: 70%;
+    padding-bottom: 6em;
+}
+
+body > header > .container > .column {
+    /*    background: grey;*/
+    margin: 2em;
+}
+
+body > header > .container > .left {
+    flex-basis: 70%;
+}
+
+body > header > .container > .right {
+    flex-basis: 30%;
+}
+
+body > header > .container .logo {
+    width: 6em;
+    height: 6em;
+}
+
+body > header > .container h1 {}
+
+body > header > .container .typewriter {
+    font-size: 2.8em;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace, 'Roboto', sans-serif;
+}
+
+body > header > .container .typewriter > .container {
+    display: block;
+    width: calc(7ch + 7 * 0.15em);
+}
+
+body > header > .container .typewriter .typewriter-text {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+        typing 2.5s steps(7, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ff6d00;
+    }
+}
+
+body > header > .container .getstarted > h2 {
+    margin: 0.5em 0;
+}
+
+body > header > .container .getstarted > .button {
+    background: #ff6d00;
+    display: block;
+    padding: 1.5em;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    width: calc(100% - 2 * 1.5em);
+    font-size: 1.5em;
+    margin-bottom: calc(1.2em / 1.5 / 2);
+}

@@ -82,8 +82,26 @@ body > nav > .items > .item > a {
     padding: 0 1em;
 }
 
+body > nav > .items > .nav_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: transparent;
+    transition-delay: 0.25s;
+}
+
 body > nav > .items > .item:hover {
-    background-color: #c2c2c2;
+    /*    background-color: #c2c2c2;*/
+    /*    background-color: rgba(240, 240, 240, 0.75);*/
+    background-color: rgba(117, 117, 117, 0.09);
+}
+
+body > nav > .items .hasdropdown:hover ~ .nav_background {
+    transition-delay: 0s;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 body > nav > .items > .item:hover > .submenu {
@@ -94,7 +112,7 @@ body > nav > .items > .item > .submenu {
     transition: clip-path 0.25s;
     clip-path: inset(0% 0% 100% 0%);
     position: absolute;
-    background: #c2c2c2;
+    background: rgba(255, 255, 255, 0.75);
     left: 0;
     padding: 1em 3em;
     width: calc(100vw - 2 * 3em);

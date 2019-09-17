@@ -152,3 +152,45 @@ body > header > .container .getstarted > .button {
     font-size: 1.5em;
     margin-bottom: calc(1.2em / 1.5 / 2);
 }
+
+@media screen and (max-width: 1280px) {
+    body > header > .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        width: 70%;
+        padding-bottom: 6em;
+    }
+
+    body > header > .container > .column {
+        text-align: center;
+    }
+
+    body > header > .container .typewriter > .container {
+        text-align: left;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    body > header {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 636px) {
+    body > header {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    body > header > .container {
+        width: 90%;
+    }
+
+    body > header > .container .typewriter {
+        font-size: 2em;
+    }
+}

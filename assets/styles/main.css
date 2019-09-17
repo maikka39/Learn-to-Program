@@ -119,22 +119,6 @@ align-content: center
 */
 }
 
-.parallax:after {
-    /* Display and position the pseudo-element */
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) scale(1.5);
-}
-
-
 @media only screen and (max-width: 736px) {
     .mobile_hidden {
         display: none !important;
@@ -147,7 +131,10 @@ align-content: center
     }
 }
 
-
+body > .content {
+    background: #ffffff;
+    z-index: 0;
+}
 
 body > .content > .support {
     position: sticky;

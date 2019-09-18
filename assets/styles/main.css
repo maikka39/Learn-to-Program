@@ -141,7 +141,7 @@ body > .content > .support {
     position: sticky;
     /*    right: 3em;*/
     /*    top: calc(100vh - 20em);*/
-    bottom: 3em;
+    bottom: 0em;
     display: flex;
     justify-content: flex-end;
     /*    background: #ffd600;*/

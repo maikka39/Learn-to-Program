@@ -278,6 +278,7 @@ body > .content > .info > .timeline > .step:before {
     position: relative;
     display: block;
     font-size: 4em;
+    /*    font-weight: 600;*/
     width: 2em;
     height: 2em;
     line-height: 2em;
@@ -330,5 +331,9 @@ body > .content > .info > .timeline > .step > .picture img {
 
     body > .content > .info > .timeline > .step > * {
         margin-top: 2em;
+    }
+
+    body > .content > .info > .timeline > .step > .text > p {
+        font-size: 1.3em;
     }
 }

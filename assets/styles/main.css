@@ -134,6 +134,7 @@ align-content: center
 body > .content {
     background: #ffffff;
     z-index: 0;
+    position: relative;
 }
 
 body > .content > .support {

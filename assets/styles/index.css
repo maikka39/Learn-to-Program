@@ -286,8 +286,8 @@ body > .content > .info > .timeline > .step:before {
     color: #ffffff;
     margin-right: 1em;
     border-radius: 100%;
-    /*    background: #ff6d00;*/
-    background: #000000;
+    background: #ff6d00;
+    /*    background: #000000;*/
 }
 
 body > .content > .info > .timeline > .step > * {

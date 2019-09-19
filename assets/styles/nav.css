@@ -11,6 +11,8 @@ body > nav {
     line-height: 3.5em;
     z-index: 10;
     user-select: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 body > nav > .nav_toggle {
@@ -59,7 +61,6 @@ body > nav > .logo {
 body > nav > .items {
     cursor: default;
     user-select: none;
-    float: right;
     margin: 0;
     padding: 0;
     margin-right: 1em;

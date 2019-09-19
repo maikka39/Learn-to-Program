@@ -259,13 +259,14 @@ body > footer > .newsletter {
 
 body > footer > .newsletter > .signup {
     display: block;
-    height: 2.5em;
+    height: 3.5em;
 }
 
 body > footer > .newsletter > .signup > * {
     display: inline-block;
     font-size: 1em;
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
+    box-sizing: border-box;
 }
 
 
@@ -276,6 +277,7 @@ body > footer > .newsletter > .signup > input {
 
 body > footer > .newsletter > .signup > button {
     border: none;
-    padding: 0;
     height: 100%;
+    background: #ff6d00;
+    color: #ffffff;
 }

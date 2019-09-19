@@ -233,17 +233,19 @@ body > nav > .items > .item > .submenu > .column > ul > li > a {
 
 
 body > footer {
+    position: relative;
     background: #000000;
-    height: 40vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 3em;
 }
 
 body > footer > .column {
     background: #000000;
     /*    height: 40vh;*/
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     color: #ffffff;
@@ -252,6 +254,25 @@ body > footer > .column {
 
 body > footer > .column > h1 {
     text-transform: uppercase;
+}
+
+body > footer > .column > ul {
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+body > footer > .column > ul > li > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ff6d00;
+}
+
+body > footer > .column > ul > li > a:after {
+    content: ">";
+    margin: 0 0.5em;
+    line-height: 100%;
 }
 
 body > footer > .newsletter {
@@ -281,4 +302,56 @@ body > footer > .newsletter > .signup > button {
     height: 100%;
     background: #ff6d00;
     color: #ffffff;
+}
+
+body > footer > .bottom {
+    align-self: flex-end;
+    margin-top: 4em;
+    text-align: center;
+}
+
+body > footer > .bottom > .copyright {
+    display: block;
+    flex: none;
+    bottom: 0;
+    color: #ffffff;
+    padding: 0.8em 2em;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+}
+
+body > footer > .bottom > .links {
+    /*    */
+}
+
+body > footer > .bottom > .links > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em;
+}
+
+body > footer > .bottom > .links > ul > li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+body > footer > .bottom > .links > ul > li a {
+    text-decoration: none;
+}
+
+body > footer > .bottom > .links > ul > li a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 736px) {
+    body > footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body > footer > .column {
+        margin: auto;
+    }
 }

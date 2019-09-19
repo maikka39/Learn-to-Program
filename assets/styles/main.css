@@ -16,6 +16,11 @@ body {
     scroll-behavior: smooth;
 }
 
+::selection {
+    color: #ff6d00;
+    background: #000000;
+}
+
 p {
     letter-spacing: 0.05em;
     line-height: 1.2em;

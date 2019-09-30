@@ -99,29 +99,90 @@ body > header > .container .typewriter {
 
 body > header > .container .typewriter > .container {
     display: block;
-    width: calc(7ch + 7 * 0.15em);
+    max-width: calc(12ch + 12 * 0.15em);
+}
+
+body > header > .container .typewriter > .container > .blinker-container {
+    display: inline;
+    border-right: .15em solid orange;
+    animation: blink-caret .5s step-end infinite;
+    vertical-align: top;
 }
 
 body > header > .container .typewriter .typewriter-text {
-    width: 100%;
+    width: 0%;
     display: inline-block;
     overflow: hidden;
-    border-right: .15em solid orange;
     white-space: nowrap;
     letter-spacing: .15em;
+    text-transform: capitalize;
+    /*
+    animation: typing calc(0.15s * 7 * 2) steps(7, end),
+blink-caret .5s step-end infinite;
+*/
+}
+
+body > header > .container .typewriter .typewriter-text[class*="website"] {
     animation:
-        typing calc(0.11666s * 7) steps(7, end),
-        blink-caret .5s step-end infinite;
+        typing7 calc(12s) steps(7, end) infinite;
+    animation-delay: -4s;
+}
+
+body > header > .container .typewriter .typewriter-text[class*="software"] {
+    animation:
+        typing8 calc(12s) steps(8, end) infinite;
+    animation-delay: 0s;
+}
+
+body > header > .container .typewriter .typewriter-text[class*="framework"] {
+    animation:
+        typing9 calc(12s) steps(9, end) infinite;
+    animation-delay: 4s;
 }
 
 /* The typing effect */
-@keyframes typing {
-    from {
+@keyframes typing7 {
+
+    from,
+    35%,
+    65%,
+    to {
         width: 0;
     }
 
+    45%,
+    55% {
+        width: calc(7ch + 7 * 0.15em);
+    }
+}
+
+@keyframes typing8 {
+
+    from,
+    35%,
+    65%,
     to {
-        width: 100%;
+        width: 0;
+    }
+
+    45%,
+    55% {
+        width: calc(8ch + 8 * 0.15em);
+    }
+}
+
+@keyframes typing9 {
+
+    from,
+    35%,
+    65%,
+    to {
+        width: 0;
+    }
+
+    45%,
+    55% {
+        width: calc(9ch + 9 * 0.15em);
     }
 }
 

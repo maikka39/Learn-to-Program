@@ -334,11 +334,12 @@ body > footer > .bottom > .links > ul {
 
 body > footer > .bottom > .links > ul > li {
     display: inline-block;
-    margin: 0 0.5em;
+    margin: 0.2em 0.5em;
 }
 
 body > footer > .bottom > .links > ul > li a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 body > footer > .bottom > .links > ul > li a:hover {

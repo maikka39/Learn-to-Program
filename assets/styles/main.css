@@ -26,6 +26,10 @@ p {
     line-height: 1.2em;
 }
 
+a {
+    color: #ff6d00;
+}
+
 * {
     transition: background-color 0.15s ease;
 }

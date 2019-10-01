@@ -111,6 +111,7 @@ body > header > .container .typewriter > .container > .blinker-container {
 
 body > header > .container .typewriter .typewriter-text {
     width: 0%;
+    vertical-align: top;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
@@ -150,8 +151,8 @@ body > header > .container .typewriter .typewriter-text[class*="framework"] {
         width: 0;
     }
 
-    45%,
-    55% {
+    40%,
+    60% {
         width: calc(7ch + 7 * 0.15em);
     }
 }
@@ -165,8 +166,8 @@ body > header > .container .typewriter .typewriter-text[class*="framework"] {
         width: 0;
     }
 
-    45%,
-    55% {
+    40%,
+    60% {
         width: calc(8ch + 8 * 0.15em);
     }
 }
@@ -180,8 +181,8 @@ body > header > .container .typewriter .typewriter-text[class*="framework"] {
         width: 0;
     }
 
-    45%,
-    55% {
+    40%,
+    60% {
         width: calc(9ch + 9 * 0.15em);
     }
 }

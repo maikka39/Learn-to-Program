@@ -250,6 +250,7 @@ body > footer > .column {
     flex-direction: column;
     color: #ffffff;
     padding: 2em;
+    margin-bottom: -1em;
 }
 
 body > footer > .column > h1 {

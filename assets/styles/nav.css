@@ -306,8 +306,27 @@ body > footer > .newsletter > .signup > button {
 
 body > footer > .bottom {
     align-self: flex-end;
-    margin-top: 4em;
     text-align: center;
+}
+
+body > footer > .bottom > .uparrow {
+    user-select: none;
+}
+
+body > footer > .bottom > .uparrow > a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.3em 1.5em 0;
+    font-size: 3.4em;
+    transition: all 0.2s ease;
+}
+
+body > footer > .bottom > .uparrow > a:hover {
+    transform: translateY(-0.2em);
+    /*    Add a padding so the arrow doesn't go up and down when putton the cursor underneath the arrow    */
+    padding-bottom: 0.2em;
+    margin-bottom: -0.2em;
 }
 
 body > footer > .bottom > .copyright {

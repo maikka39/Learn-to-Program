@@ -306,8 +306,14 @@ body > footer > .newsletter > .signup > button {
 }
 
 body > footer > .bottom {
-    align-self: flex-end;
     text-align: center;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+body > footer > .bottom > * {
+    max-width: 70em;
+    margin: auto;
 }
 
 body > footer > .bottom > .uparrow {

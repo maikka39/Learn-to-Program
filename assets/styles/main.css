@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    /*    z-index: -10;*/
+    z-index: -10;
 }
 
 ::selection {

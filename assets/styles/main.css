@@ -187,7 +187,7 @@ body > .content > .support .content {
 
 body > .content > .support .content:after {
     /*    content: "\260E";*/
-    content: " ";
+    content: "";
     width: 1em;
     height: 1em;
     background: #ffffff;
@@ -210,6 +210,9 @@ body > .content > .support .content:after {
     font-size: 3em;
     right: 0.5em;
     bottom: 0.5em;
+
+    transition-delay: 0.10s;
+    transition-duration: 0.15s;
 }
 
 body > .content > .support .content:hover {
@@ -220,6 +223,7 @@ body > .content > .support .content:hover {
 
 body > .content > .support .content:hover:after {
     background: transparent;
+    transition: none;
 }
 
 body > .content > .support .content > * {

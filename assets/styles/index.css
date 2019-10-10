@@ -444,7 +444,6 @@ body > .content > .whattodo .columns {
 }
 
 body > .content > .whattodo .columns > .column {
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
     color: #ffffff;
@@ -457,12 +456,23 @@ body > .content > .whattodo .course {
     /*    */
 }
 
-
-body > .content > .whattodo .course > h1 {
-    text-align: center;
-    line-height: 2.3em;
+body > .content > .whattodo .course > .title {
+    align-content: flex-end;
+    height: 2.3em;
     border-bottom: solid #ffffff;
-    margin: 0;
+    position: relative;
+}
+
+
+body > .content > .whattodo .course > .title h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.8em;
+    margin: 0.3em 0;
 }
 
 body > .content > .whattodo .course > .labels {

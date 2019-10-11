@@ -268,11 +268,13 @@ body > footer > .column > ul > li > a {
     text-decoration: none;
     text-transform: capitalize;
     color: #ff6d00;
+    position: relative;
 }
 
 body > footer > .column > ul > li > a:after {
     content: ">";
-    margin: 0 0.5em;
+    position: absolute;
+    margin-left: 0.5em;
     line-height: 100%;
 }
 

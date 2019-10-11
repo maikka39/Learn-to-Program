@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/loading.css" media="all">
+    <link rel="stylesheet" href="assets/styles/main.css" media="all">
+    <link rel="stylesheet" href="assets/styles/nav.css" media="all">
+    <link rel="stylesheet" href="assets/styles/header.css" media="all">
+    <link rel="stylesheet" href="assets/styles/catalog.css" media="all">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://maik.dev/projects/learntoprogram/catalog/">
+
+    <title>Template | Learn to Program</title>
+    <!--
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="@maik_dev" />
+-->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div id="loading">
+        <div class="container">
+            <span class="load_icon"></span>
+        </div>
+    </div>
+    <nav>
+        <input class="nav_toggle_input hidden" id="nav_toggle_mobile" type="checkbox">
+        <label class="nav_toggle desktop_hidden" for="nav_toggle_mobile"></label>
+        <a class="logo" href="/">Learn to Program</a>
+        <ul class="items">
+            <li class="item active"><a href="/">Home</a></li>
+            <li class="item hasdropdown">
+                <a href="/catalog.html">Learn</a>
+                <div class="submenu mobile_hidden">
+                    <div class="column capitalize">
+                        <span><a href="#">Subjects</a></span>
+                        <ul>
+                            <li><a href="#">Full catalog</a></li>
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#">Programming</a></li>
+                            <li><a href="#">Data science</a></li>
+                            <li><a href="#">Partnerships</a></li>
+                            <li><a href="#">Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <span><a href="#">Languages</a></span>
+                        <ul>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Ruby</a></li>
+                            <li><a href="#">Kotlin</a></li>
+                            <li><a href="#">PHP</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <span><a href="#">Frameworks</a></span>
+                        <ul>
+                            <li><a href="#">Vue.js</a></li>
+                            <li><a href="#">ReactJS</a></li>
+                            <li><a href="#">Express</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item"><a href="/pricing.html">Pricing</a></li>
+            <li class="item"><a href="/about.html">About</a></li>
+            <div class="nav_background"></div>
+        </ul>
+    </nav>
+    <header class="parallax">
+        <div class="container">
+            <h1>Catalog</h1>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="catalog">
+            <h1>Full catalog</h1>
+            <p>
+                Whether you’re trying to up your career, build your side project, or simply play around with some code, you’ve found the right place to start. Have a look at our programs and courses, try an exercise or two, and join our community of <em>almost</em> 50 million people.
+            </p>
+            <div id="courses" class="item courses">
+                <div class="intro">
+                    <h2>Courses</h2>
+                    <span class="paid">Paid</span>
+                    <p>Each course will teach you exactly what you need to build a solid foundation for a career in tech.</p>
+                </div>
+                <a href="#" class="item codefoundations">
+                    <div class="image"></div>
+                    <div class="info">
+                        <h3>Code foundations</h3>
+                        <p>Want to code but don't know how? This is where to start!</p>
+                        <div class="checks">
+                            <span>Principles</span>
+                            <span>Beginner friendly</span>
+                            <span>Applications</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item computerscience">
+                    <div class="image"></div>
+                    <div class="info">
+                        <h3>Computer science</h3>
+                        <p>Interested in the theory behind the code? Master Python while figuring out data structures, algorithms and more!</p>
+                        <div class="checks">
+                            <span>Python</span>
+                            <span>Data structures</span>
+                            <span>Command line</span>
+                            <span>Background info</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item datascience">
+                    <div class="image"></div>
+                    <div class="info">
+                        <h3>Data science</h3>
+                        <p>Get to know MongoDB and Python and build the skills needed to analyze and visualize data.</p>
+                        <div class="checks">
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>Data visualization</span>
+                            <span>Machine learning</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item webdevelopment">
+                    <div class="image"></div>
+                    <div class="info">
+                        <h3>Web development</h3>
+                        <p>Master the languages of the web: HTML, CSS and Javascript. This course is great fo people getting into frond-end development!</p>
+                        <div class="checks">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Front-End</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div id="skills" class="skills item">
+                <div class="intro">
+                    <h2>Skills</h2>
+                    <span class="paid">Paid</span>
+                    <p>These courses will futher expand your knowledge on handy skills.</p>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Analyse Data with Python</h3>
+                                <p class="fadeout">Learn how to analyze and visualize data using Python.</p>
+                                <span>10 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Analyse Data with MongoDB</h3>
+                                <p class="fadeout">Get to know document oriented databases and learn how analyze big data.</p>
+                                <span>5 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Analyse Data with SQL</h3>
+                                <p class="fadeout">Master SQL queries and work with several datasets to optimize your buisness data.</p>
+                                <span>6 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Create a Back-End App with JavaScript</h3>
+                                <p class="fadeout">Learn how to build APIs using Node.js and frameworks like Express.js.</p>
+                                <span>8 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Create a Front-End App with React</h3>
+                                <p class="fadeout">Learn to build front-end apps with JavaScript and React.</p>
+                                <span>8 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Get Started with Artificial Intelligence</h3>
+                                <p class="fadeout">Learn the fundamentals of artificial intelligence and understand how it all works.</p>
+                                <span>12 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Learn How to Build Websites</h3>
+                                <p class="fadeout">Learn the basics of webdevelopment to build your own website.</p>
+                                <span>10 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <h3>Visualize Data with Pyton</h3>
+                                <p class="fadeout">Learn how to turn data into helpful visualizations using Python.</p>
+                                <span>6 weeks</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="languages" class="languages item">
+                <div class="intro">
+                    <h2>Languages</h2>
+                    <span class="paid">Free</span>
+                    <p>These courses teach you a specific language or technology through interactive lessons.</p>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Welcome</h3>
+                                <p class="fadeout">First time on our site? Start here to learn how to use this platform!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Learn How to Code</h3>
+                                <p class="fadeout">The key to programming is knowing how to write stuff down.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Introduction to HTML</h3>
+                                <p class="fadeout">In just a few hours you will learn the basics of HTML5 and can start building your own websites.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Introduction to CSS</h3>
+                                <p class="fadeout">Learn how to make a visually appealing website with CSS and HTML.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item exclusive">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Exclusive Course</span>
+                                <h3>Learn Python 3</h3>
+                                <p class="fadeout">Learn everything about the most popular programming language of this year.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Learn Python 2</h3>
+                                <p class="fadeout">Learn the basics of the world's fastest growing language.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Learn Java</h3>
+                                <p class="fadeout">Learn the basics of the popular language Java.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="item">
+                            <div class="image"></div>
+                            <div class="info">
+                                <span>Course</span>
+                                <h3>Introduction to Javascript</h3>
+                                <p class="fadeout">You'll learn the JavaScript fundamentals you'll need for a basic front-end or back-end development</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <span>More courses coming soon!</span>
+            </div>
+        </div>
+
+        <div class="support mobile_hidden">
+            <div class="container">
+                <div class="content">
+                    <h1>Support</h1>
+                    <p>Online text support is not available yet. Please come back later or send us an email at <a href="mailto:learntoprogram@maik.dev">learntoprogram@maik.dev</a>.</p>
+                    <p>You can also try to contact us using the <a href="/contact.html#form">contact form</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="column">
+            <h1>Info</h1>
+            <ul>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Hiring</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Need help?</h1>
+            <ul>
+                <li><a href="#">Customer service</a></li>
+                <li><a href="#">Group sales</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+            </ul>
+        </div>
+        <div class="column newsletter">
+            <h1>Stay connected</h1>
+            <p>Join over 10,000 people who recieve our bi-weekly newsletter.</p>
+            <div class="signup">
+                <input type="email" name="email" placeholder="Email Adress">
+                <button>Sign-Up</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="uparrow">
+                <a href="#top">&#8963;</a>
+            </div>
+            <div class="copyright">
+                <span class="copyright">© Maik de Kruif (maikka39). All rights reserved.</span>
+                <span class="splitmark">|</span>
+                <span class="not_affiliated">Learn to Program is not affiliated with any company.</span>
+                <span class="splitmark">|</span>
+                <span class="trademarks">Brand and product names mentioned are trademarks of their respective companies.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

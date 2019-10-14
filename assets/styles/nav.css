@@ -192,6 +192,7 @@ body > nav > .items > .item > .submenu > .column > ul > li > a {
         background: #ffffff;
         width: 100%;
         margin: 0;
+        padding: 0;
         text-align: center;
         position: absolute;
         left: 50%;

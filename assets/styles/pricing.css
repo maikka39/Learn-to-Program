@@ -1,0 +1,452 @@
+body > .content > .column {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0 3em;
+}
+
+body > .content .title {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+
+body > .content .title h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+body > .content .title p {
+    margin-top: 0;
+    line-height: 1.4em;
+}
+
+body > .content .pricing {
+    display: flex;
+    width: 90%;
+    margin: 3.5em auto 0;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+body > .content .pricing > .column {
+    flex-basis: 100%;
+    box-sizing: border-box;
+    box-shadow: rgb(198, 198, 198) 0px 2.5px 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 7px;
+}
+
+body > .content .pricing > .column:after {
+    border-radius: inherit;
+}
+
+body > .content .pricing > .column h2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    padding: 1em;
+    border-bottom: solid #e2e2e2 1.2px;
+}
+
+body > .content .pricing > .column .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+body > .content .pricing > .column .prices > .column {
+    flex-basis: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .content .pricing > .column .prices .centered {
+    text-align: center;
+}
+
+body > .content .pricing > .column .prices h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+body > .content .pricing > .column .prices .price {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    height: 2em;
+    font-size: 2em;
+    font-weight: 700;
+    position: relative;
+}
+
+body > .content .pricing > .column .prices .price .contact {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.5em;
+    font-weight: 600;
+}
+
+body > .content .pricing > .column .prices .price .currency {
+    font-size: 1.3em;
+}
+
+body > .content .pricing > .column .prices .price .amount {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+body > .content .pricing > .column .prices .price .dot {
+    opacity: 0;
+    width: 0.1em;
+}
+
+body > .content .pricing > .column .prices .price .super {
+    font-size: 1em;
+}
+
+body > .content .pricing > .column .prices .price:first-letter {
+    font-size: 3em;
+}
+
+body > .content .pricing > .column .prices .time {
+    display: block;
+    height: 1.2em;
+    font-weight: 600;
+}
+
+body > .content .pricing > .column .prices ul {
+    list-style: none;
+    padding: 1em 0 2em 0;
+}
+
+body > .content .pricing > .column .prices ul li {
+    list-style: none;
+    line-height: 1.6rem;
+    vertical-align: middle;
+    padding-left: 1.4em;
+    position: relative;
+}
+
+body > .content .pricing > .column .prices ul li:before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #ff6d00;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.6rem;
+    vertical-align: middle;
+}
+
+body > .content .pricing > .column .prices ul li.unlimited:before {
+    content: "\221E";
+}
+
+body > .content .pricing > .column > .prices .top > p {
+    font-size: 0.8em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > .content .pricing .info {
+    color: #000000;
+    font-size: 0.8em;
+    width: 80%;
+    opacity: 0.8;
+    margin: 0.75em 0;
+    margin-top: auto;
+}
+
+body > .content .pricing > .column .choose {
+    display: block;
+    background: #ff6d00;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: solid transparent 2px;
+    transition: all 0.1s ease;
+}
+
+body > .content .pricing > .column.individuals {
+    background: #ffffff;
+    color: #000000;
+    order: 1;
+    box-shadow: none;
+}
+
+body > .content .pricing > .column.individuals:after {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: rgb(198, 198, 198) 0px 2.5px 20px;
+}
+
+body > .content .pricing > .column.teams {
+    background: #ff6d00;
+    color: #ffffff;
+    margin-top: 5em;
+    margin-left: -1.6em;
+    order: 2;
+}
+
+body > .content .pricing > .column.teams a {
+    color: inherit;
+}
+
+body > .content .pricing > .column.individuals .prices ul li:before {
+    color: #ff6d00;
+}
+
+body > .content .pricing > .column.teams .prices ul li:before {
+    color: #ffffff;
+}
+
+body > .content .pricing > .column.individuals .info {
+    color: #000000;
+}
+
+body > .content .pricing > .column.individuals .info a {
+    color: #ff6d00;
+}
+
+body > .content .pricing > .column.teams .info {
+    color: #ffffff;
+}
+
+body > .content .pricing > .column.teams .info a {
+    color: #ffffff;
+}
+
+body > .content .pricing > .column.individuals .choose {
+    background: #ff6d00;
+    color: #ffffff;
+}
+
+body > .content .pricing > .column.teams .choose {
+    background: #ffffff;
+    color: #ff6d00;
+}
+
+body > .content .pricing > .column.individuals .choose:hover {
+    background: #ffffff;
+    color: #ff6d00;
+    border: solid #ff6d00 2px;
+}
+
+body > .content .pricing > .column.teams .choose:hover {
+    background: #ff6d00;
+    color: #ffffff;
+    border: solid #ffffff 2px;
+}
+
+body > .content .everyone {
+    background: #ff6d00;
+    color: #ffffff;
+    text-align: center;
+    margin: 5em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body > .content .everyone > .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5em 0 6em;
+}
+
+body > .content .everyone h1 {
+    font-size: 3em;
+}
+
+body > .content .everyone p {
+    width: 60%;
+    margin: 0.5em auto;
+}
+
+body > .content .compare {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > .content .compare .table {
+    width: 100%;
+    overflow-x: auto;
+    margin: 3em 0;
+}
+
+body > .content .compare table {
+    margin: 0;
+    width: 100%;
+    min-width: 50em;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+}
+
+body > .content .compare table tr {
+    height: 4em;
+}
+
+body > .content .compare table th {
+    background: #f5f5f5;
+
+}
+
+body > .content .compare table .subtitle {
+    position: sticky;
+    top: 0;
+    border: none;
+    box-shadow: inset 0 0 0 0.5px #dddddd;
+}
+
+body > .content .compare table td,
+body > .content .compare table th {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 0.8em 0;
+    width: 20%;
+}
+
+body > .content .compare table td:nth-child(1),
+body > .content .compare table th:nth-child(1) {
+    text-align: start;
+    border-left: none;
+}
+
+/*
+body > .content .compare table:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 200%;
+    z-index: -1;
+    background: #ff6d00;
+}
+*/
+
+body > .content .compare table td:nth-child(4),
+body > .content .compare table td:nth-child(5),
+body > .content .compare table td:last-child,
+body > .content .compare table th:nth-child(3) {
+    background: #ff6d00;
+    color: #ffffff;
+}
+
+body > .content .compare table td:nth-child(4) a,
+body > .content .compare table td:nth-child(5) a,
+body > .content .compare table td:last-child a,
+body > .content .compare table th:nth-child(3) a {
+    color: #ffffff
+}
+
+body > .content .compare table tr.heading td {
+    padding-top: 2em;
+    /*    border: none;*/
+}
+
+body > .content .compare table .costs {
+    text-align: center;
+    margin: 1em;
+}
+
+body > .content .compare table .costs span {
+    display: block;
+    margin: 0.3em 0;
+}
+
+body > .content .compare table .costs .cost {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+body > .content .compare table .costs .price {
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+body > .content .compare table .costs .time {
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+body > .content .compare table .yes:after {
+    content: "\2713";
+    font-size: 1.3em;
+    font-weight: 700;
+    /*    color: #008000;*/
+    color: #34d058;
+}
+
+body > .content .compare table .no:after {
+    content: "\2715";
+    /*    content: "\2717";*/
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+@media screen and (max-width: 1280px) {
+    body > .content > .column {
+        width: 90%;
+    }
+
+    body > .content .everyone h1 {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    body > .content .pricing {
+        display: flex;
+        width: 90%;
+        margin: 3.5em auto 0;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    body > .content .pricing > .column.teams {
+        margin: 3em 0;
+    }
+
+    body > .content .everyone h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    body > .content .pricing > .column .prices {
+        flex-direction: column;
+    }
+
+    body > .content .everyone h1 {
+        font-size: 2.2em;
+    }
+
+    body > .content .everyone p {
+        font-size: 1em;
+    }
+}

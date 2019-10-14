@@ -1,0 +1,622 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+
+body > header {
+    position: relative;
+    transform-style: inherit;
+    /*    height: 100vh;*/
+
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+    box-sizing: border-box;
+    /*    padding: 30vw 0 5vw;*/
+    /*    background: rgba(6, 6, 18, 0.95);*/
+}
+
+body > .parallax,
+body > .parallax:before {
+    background: 50% 50% / cover;
+}
+
+body > .parallax {
+    z-index: -1;
+}
+
+body > .parallax:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    /*    background-image: url("/assets/images/banner.webp");*/
+    /*    background-size: cover;*/
+    background: linear-gradient(22.5deg, rgba(67, 67, 67, 0.02) 0%, rgba(67, 67, 67, 0.02) 29%, rgba(47, 47, 47, 0.02) 29%, rgba(47, 47, 47, 0.02) 37%, rgba(23, 23, 23, 0.02) 37%, rgba(23, 23, 23, 0.02) 55%, rgba(182, 182, 182, 0.02) 55%, rgba(182, 182, 182, 0.02) 69%, rgba(27, 27, 27, 0.02) 69%, rgba(27, 27, 27, 0.02) 71%, rgba(250, 250, 250, 0.02) 71%, rgba(250, 250, 250, 0.02) 100%), linear-gradient(67.5deg, rgba(117, 117, 117, 0.02) 0%, rgba(117, 117, 117, 0.02) 14%, rgba(199, 199, 199, 0.02) 14%, rgba(199, 199, 199, 0.02) 40%, rgba(33, 33, 33, 0.02) 40%, rgba(33, 33, 33, 0.02) 48%, rgba(135, 135, 135, 0.02) 48%, rgba(135, 135, 135, 0.02) 60%, rgba(148, 148, 148, 0.02) 60%, rgba(148, 148, 148, 0.02) 95%, rgba(53, 53, 53, 0.02) 95%, rgba(53, 53, 53, 0.02) 100%), linear-gradient(135deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 6%, rgba(251, 251, 251, 0.02) 6%, rgba(251, 251, 251, 0.02) 18%, rgba(2, 2, 2, 0.02) 18%, rgba(2, 2, 2, 0.02) 27%, rgba(253, 253, 253, 0.02) 27%, rgba(253, 253, 253, 0.02) 49%, rgba(128, 128, 128, 0.02) 49%, rgba(128, 128, 128, 0.02) 76%, rgba(150, 150, 150, 0.02) 76%, rgba(150, 150, 150, 0.02) 100%), linear-gradient(90deg, #FFF, #FFF);
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -2;
+    min-height: 100vh;
+}
+
+/*
+body > .parallax:after {
+    background-size: cover;
+    background-image: url("/assets/images/banner.webp");
+    z-index: -1;
+}
+*/
+
+body > header > .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*    justify-content: space-between;*/
+    justify-content: center;
+    /*    align-items: center;*/
+    align-items: flex-end;
+    align-content: center;
+    width: 70%;
+    padding-bottom: 6em;
+}
+
+body > header > .container > .column {
+    /*    background: grey;*/
+    margin: 2em;
+}
+
+body > header > .container > .left {
+    flex-basis: 70%;
+}
+
+body > header > .container > .right {
+    flex-basis: 30%;
+}
+
+body > header > .container .logo {
+    width: 6em;
+    height: 6em;
+}
+
+body > header > .container h1 {}
+
+body > header > .container .typewriter {
+    font-size: 2.8em;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace, 'Roboto', sans-serif;
+}
+
+body > header > .container .typewriter > .container {
+    display: block;
+    max-width: calc(12ch + 12 * 0.15em);
+}
+
+body > header > .container .typewriter > .container > .blinker-container {
+    display: inline;
+    border-right: .15em solid orange;
+    animation: blink-caret .5s step-end infinite;
+    vertical-align: top;
+}
+
+body > header > .container .typewriter .typewriter-text {
+    width: 0%;
+    vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    text-transform: capitalize;
+    /*
+    animation: typing calc(0.15s * 7 * 2) steps(7, end),
+blink-caret .5s step-end infinite;
+*/
+}
+
+body > header > .container .typewriter .typewriter-text[class*="website"] {
+    animation:
+        typing7 calc(12s) steps(7, end) infinite;
+    animation-delay: -4s;
+}
+
+body > header > .container .typewriter .typewriter-text[class*="software"] {
+    animation:
+        typing8 calc(12s) steps(8, end) infinite;
+    animation-delay: 0s;
+}
+
+body > header > .container .typewriter .typewriter-text[class*="framework"] {
+    animation:
+        typing9 calc(12s) steps(9, end) infinite;
+    animation-delay: 4s;
+}
+
+/* The typing effect */
+@keyframes typing7 {
+
+    from,
+    35%,
+    65%,
+    to {
+        width: 0;
+    }
+
+    40%,
+    60% {
+        width: calc(7ch + 7 * 0.15em);
+    }
+}
+
+@keyframes typing8 {
+
+    from,
+    35%,
+    65%,
+    to {
+        width: 0;
+    }
+
+    40%,
+    60% {
+        width: calc(8ch + 8 * 0.15em);
+    }
+}
+
+@keyframes typing9 {
+
+    from,
+    35%,
+    65%,
+    to {
+        width: 0;
+    }
+
+    40%,
+    60% {
+        width: calc(9ch + 9 * 0.15em);
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ff6d00;
+    }
+}
+
+body > header > .container .getstarted > h2 {
+    margin: 0.5em 0;
+}
+
+body > header > .container .getstarted > .button {
+    background: #ff6d00;
+    display: block;
+    padding: 1.5em;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    width: calc(100% - 2 * 1.5em);
+    font-size: 1.5em;
+    margin-bottom: calc(1.2em / 1.5 / 2);
+}
+
+@media screen and (max-width: 1280px) {
+    body > header > .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        width: 70%;
+        padding-bottom: 6em;
+    }
+
+    body > header > .container > .column {
+        text-align: center;
+    }
+
+    body > header > .container .typewriter > .container {
+        text-align: left;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    body > header {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 636px) {
+    body > header {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    body > header > .container {
+        width: 90%;
+    }
+
+    body > header > .container .typewriter {
+        font-size: 2em;
+    }
+}
+
+body > .content > .info {
+    width: 70%;
+    min-width: 1260px;
+    margin: auto;
+    padding-top: 5em;
+}
+
+@media screen and (max-width: 1280px) {
+    body > .content > .info {
+        min-width: initial;
+        width: 85%;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body > .content > .info {
+        width: 90%;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    body > .content > .info {
+        width: 90%;
+        margin: auto;
+        padding-top: 5em;
+    }
+}
+
+body > .content > .info > .notsurewheretobegin > h1 {
+    background: #000000;
+    color: #ffffff;
+    padding: 1.5em 1.5em;
+}
+
+body > .content > .info > .notsurewheretobegin > p {
+    font-size: 2em;
+    margin: 2em;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 1280px) {
+    body > .content > .info > .notsurewheretobegin {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body > .content > .info > .notsurewheretobegin > h1 {
+        padding: 1.5em 0;
+        width: 120%;
+        margin-left: -10%;
+    }
+}
+
+body > .content > .info > .timeline {
+    padding: 0 5em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    counter-reset: number;
+}
+
+body > .content > .info > .timeline > .step {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 2em 0;
+    counter-increment: number;
+}
+
+body > .content > .info > .timeline > .step:before {
+    content: counter(number)"";
+    flex-shrink: 0;
+    position: relative;
+    display: block;
+    font-size: 4em;
+    /*    font-weight: 600;*/
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 1em;
+    border-radius: 100%;
+    background: #ff6d00;
+    /*    background: #000000;*/
+}
+
+body > .content > .info > .timeline > .step > * {
+    margin: 0 2em;
+}
+
+body > .content > .info > .timeline > .step > .text {
+    flex-shrink: 1;
+}
+
+body > .content > .info > .timeline > .step > .picture {
+    flex-shrink: 0;
+    width: 20%;
+    min-width: 140px;
+}
+
+body > .content > .info > .timeline > .step > .picture img {
+    width: 100%;
+    margin-top: 12%;
+    margin-bottom: -9%;
+}
+
+@media screen and (max-width: 1280px) {
+    body > .content > .info > .timeline > .step:before {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body > .content > .info > .timeline {
+        text-align: center;
+    }
+
+    body > .content > .info > .timeline > .step {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3em;
+    }
+
+    body > .content > .info > .timeline > .step:before {
+        margin-right: 0;
+    }
+
+    body > .content > .info > .timeline > .step > * {
+        margin-top: 2em;
+    }
+
+    body > .content > .info > .timeline > .step > .text > p {
+        font-size: 1.3em;
+    }
+}
+
+body > .content > .whattodo {
+    background: linear-gradient(323deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 16.667%, rgba(46, 46, 46, 0.01) 16.667%, rgba(46, 46, 46, 0.01) 33.334%, rgba(226, 226, 226, 0.01) 33.334%, rgba(226, 226, 226, 0.01) 50.001000000000005%, rgba(159, 159, 159, 0.01) 50.001%, rgba(159, 159, 159, 0.01) 66.668%, rgba(149, 149, 149, 0.01) 66.668%, rgba(149, 149, 149, 0.01) 83.33500000000001%, rgba(43, 43, 43, 0.01) 83.335%, rgba(43, 43, 43, 0.01) 100.002%), linear-gradient(346deg, rgba(166, 166, 166, 0.03) 0%, rgba(166, 166, 166, 0.03) 25%, rgba(240, 240, 240, 0.03) 25%, rgba(240, 240, 240, 0.03) 50%, rgba(121, 121, 121, 0.03) 50%, rgba(121, 121, 121, 0.03) 75%, rgba(40, 40, 40, 0.03) 75%, rgba(40, 40, 40, 0.03) 100%), linear-gradient(347deg, rgba(209, 209, 209, 0.01) 0%, rgba(209, 209, 209, 0.01) 25%, rgba(22, 22, 22, 0.01) 25%, rgba(22, 22, 22, 0.01) 50%, rgba(125, 125, 125, 0.01) 50%, rgba(125, 125, 125, 0.01) 75%, rgba(205, 205, 205, 0.01) 75%, rgba(205, 205, 205, 0.01) 100%), linear-gradient(84deg, rgba(195, 195, 195, 0.01) 0%, rgba(195, 195, 195, 0.01) 14.286%, rgba(64, 64, 64, 0.01) 14.286%, rgba(64, 64, 64, 0.01) 28.572%, rgba(67, 67, 67, 0.01) 28.572%, rgba(67, 67, 67, 0.01) 42.858%, rgba(214, 214, 214, 0.01) 42.858%, rgba(214, 214, 214, 0.01) 57.144%, rgba(45, 45, 45, 0.01) 57.144%, rgba(45, 45, 45, 0.01) 71.42999999999999%, rgba(47, 47, 47, 0.01) 71.43%, rgba(47, 47, 47, 0.01) 85.71600000000001%, rgba(172, 172, 172, 0.01) 85.716%, rgba(172, 172, 172, 0.01) 100.002%), linear-gradient(73deg, rgba(111, 111, 111, 0.03) 0%, rgba(111, 111, 111, 0.03) 16.667%, rgba(202, 202, 202, 0.03) 16.667%, rgba(202, 202, 202, 0.03) 33.334%, rgba(57, 57, 57, 0.03) 33.334%, rgba(57, 57, 57, 0.03) 50.001000000000005%, rgba(197, 197, 197, 0.03) 50.001%, rgba(197, 197, 197, 0.03) 66.668%, rgba(97, 97, 97, 0.03) 66.668%, rgba(97, 97, 97, 0.03) 83.33500000000001%, rgba(56, 56, 56, 0.03) 83.335%, rgba(56, 56, 56, 0.03) 100.002%), linear-gradient(132deg, rgba(88, 88, 88, 0.03) 0%, rgba(88, 88, 88, 0.03) 20%, rgba(249, 249, 249, 0.03) 20%, rgba(249, 249, 249, 0.03) 40%, rgba(2, 2, 2, 0.03) 40%, rgba(2, 2, 2, 0.03) 60%, rgba(185, 185, 185, 0.03) 60%, rgba(185, 185, 185, 0.03) 80%, rgba(196, 196, 196, 0.03) 80%, rgba(196, 196, 196, 0.03) 100%), linear-gradient(142deg, rgba(160, 160, 160, 0.03) 0%, rgba(160, 160, 160, 0.03) 12.5%, rgba(204, 204, 204, 0.03) 12.5%, rgba(204, 204, 204, 0.03) 25%, rgba(108, 108, 108, 0.03) 25%, rgba(108, 108, 108, 0.03) 37.5%, rgba(191, 191, 191, 0.03) 37.5%, rgba(191, 191, 191, 0.03) 50%, rgba(231, 231, 231, 0.03) 50%, rgba(231, 231, 231, 0.03) 62.5%, rgba(70, 70, 70, 0.03) 62.5%, rgba(70, 70, 70, 0.03) 75%, rgba(166, 166, 166, 0.03) 75%, rgba(166, 166, 166, 0.03) 87.5%, rgba(199, 199, 199, 0.03) 87.5%, rgba(199, 199, 199, 0.03) 100%), linear-gradient(238deg, rgba(116, 116, 116, 0.02) 0%, rgba(116, 116, 116, 0.02) 20%, rgba(141, 141, 141, 0.02) 20%, rgba(141, 141, 141, 0.02) 40%, rgba(152, 152, 152, 0.02) 40%, rgba(152, 152, 152, 0.02) 60%, rgba(61, 61, 61, 0.02) 60%, rgba(61, 61, 61, 0.02) 80%, rgba(139, 139, 139, 0.02) 80%, rgba(139, 139, 139, 0.02) 100%), linear-gradient(188deg, rgba(227, 227, 227, 0.01) 0%, rgba(227, 227, 227, 0.01) 20%, rgba(105, 105, 105, 0.01) 20%, rgba(105, 105, 105, 0.01) 40%, rgba(72, 72, 72, 0.01) 40%, rgba(72, 72, 72, 0.01) 60%, rgba(33, 33, 33, 0.01) 60%, rgba(33, 33, 33, 0.01) 80%, rgba(57, 57, 57, 0.01) 80%, rgba(57, 57, 57, 0.01) 100%), linear-gradient(90deg, hsl(237, 0%, 13%), hsl(237, 0%, 13%));
+    color: #ffffff;
+    margin-top: 5em;
+}
+
+body > .content > .whattodo > .container {
+    width: 60%;
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 7em 0 2em 0;
+}
+
+body > .content > .whattodo .points {
+    /*    padding: 7em 0;*/
+}
+
+body > .content > .whattodo .points > .point {
+    text-align: center;
+    display: block;
+    font-size: 4em;
+    margin: 0.3em auto;
+    font-weight: 600;
+}
+
+body > .content > .whattodo .points > .point .why {
+    color: #ff6d00;
+}
+
+body > .content > .whattodo .points > .point .what {
+    color: #ff6d00;
+}
+
+body > .content > .whattodo .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 2em 3em 6em 3em;
+}
+
+body > .content > .whattodo .columns > .column {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 2em;
+    margin-bottom: -1em;
+    flex-basis: 100%;
+}
+
+body > .content > .whattodo .course {
+    /*    */
+}
+
+body > .content > .whattodo .course > .title {
+    align-content: flex-end;
+    height: 2.3em;
+    border-bottom: solid #ffffff;
+    position: relative;
+}
+
+
+body > .content > .whattodo .course > .title h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.8em;
+    margin: 0.3em 0;
+}
+
+body > .content > .whattodo .course > .labels {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin: 1.2em;
+}
+
+body > .content > .whattodo .course > .labels .label {
+    vertical-align: middle;
+    margin-right: 0.8em;
+}
+
+body > .content > .whattodo .course > .labels .label:before {
+    content: "";
+    display: inline-block;
+    background: #ff6d00;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+    margin-right: 0.5em;
+    border-radius: 100%;
+}
+
+body > .content > .whattodo .course > p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1280px) {
+    body > .content > .whattodo .points > .point {
+        font-size: 3.8em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body > .content > .whattodo .columns {
+        flex-wrap: wrap;
+    }
+
+    body > .content > .whattodo .columns > .column {
+        flex-basis: 40%;
+    }
+
+    body > .content > .whattodo .points > .point {
+        font-size: 3.4em;
+        /*    margin: 0.3em auto;*/
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body > .content > .whattodo .columns > .column {
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body > .content > .whattodo {
+        text-align: center;
+    }
+
+    body > .content > .whattodo .columns {
+        flex-direction: column;
+    }
+
+    body > .content > .whattodo .columns > .column {
+        flex-basis: 100%;
+    }
+
+    body > .content > .whattodo .points > .point {
+        font-size: 3em;
+        /*    margin: 0.3em auto;*/
+    }
+}
+
+body > .content > .changecareer {
+    background: linear-gradient(135deg, rgb(255, 109, 0) 0%, rgb(255, 149, 40) 100%);
+    /*    background: #ff6d00;*/
+    color: #ffffff;
+    text-align: center;
+}
+
+body > .content > .changecareer > .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 6em 0;
+}
+
+body > .content > .changecareer h1 {
+    font-size: 4em;
+}
+
+body > .content > .changecareer p {
+    font-size: 1.6em;
+    margin: 1.3em 0;
+}
+
+body > .content > .changecareer a {
+    display: inline-block;
+    font-size: 1.4em;
+    color: #ffffff;
+    text-decoration: none;
+    background: transparent;
+    padding: 0.5em 4em;
+    border: solid #ffffff;
+    border-radius: 50px;
+    transition: all 0.1s ease;
+}
+
+body > .content > .changecareer a:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+@media screen and (max-width: 1280px) {
+    body > .content > .changecareer h1 {
+        font-size: 3.8em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body > .content > .changecareer h1 {
+        font-size: 3.4em;
+        /*    margin: 0.3em auto;*/
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body > .content > .changecareer {
+        text-align: center;
+    }
+
+    body > .content > .changecareer h1 {
+        font-size: 3em;
+        /*    margin: 0.3em auto;*/
+    }
+
+    body > .content > .changecareer p {
+        font-size: 1em;
+        /*        margin: 1.3em 0;*/
+    }
+
+    body > .content > .changecareer a {
+        font-size: 1.2em;
+        /*        padding: 0.5em 4em;*/
+    }
+}

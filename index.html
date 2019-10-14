@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/loading.css" media="all">
+    <link rel="stylesheet" href="assets/styles/main.css" media="all">
+    <link rel="stylesheet" href="assets/styles/nav.css" media="all">
+    <link rel="stylesheet" href="assets/styles/index.css" media="all">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://maik.dev/projects/learntoprogram">
+
+    <title>Learn to Program</title>
+    <!--
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="@maik_dev" />
+-->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div id="loading">
+        <div class="container">
+            <span class="load_icon"></span>
+        </div>
+    </div>
+    <nav>
+        <input class="nav_toggle_input hidden" id="nav_toggle_mobile" type="checkbox">
+        <label class="nav_toggle desktop_hidden" for="nav_toggle_mobile"></label>
+        <a class="logo" href="/">Learn to Program</a>
+        <ul class="items">
+            <li class="item active"><a href="/">Home</a></li>
+            <li class="item hasdropdown">
+                <a href="/catalog.html">Learn</a>
+                <div class="submenu mobile_hidden">
+                    <div class="column capitalize">
+                        <span><a href="#">Subjects</a></span>
+                        <ul>
+                            <li><a href="#">Full catalog</a></li>
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#">Programming</a></li>
+                            <li><a href="#">Data science</a></li>
+                            <li><a href="#">Partnerships</a></li>
+                            <li><a href="#">Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <span><a href="#">Languages</a></span>
+                        <ul>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Ruby</a></li>
+                            <li><a href="#">Kotlin</a></li>
+                            <li><a href="#">PHP</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <span><a href="#">Frameworks</a></span>
+                        <ul>
+                            <li><a href="#">Vue.js</a></li>
+                            <li><a href="#">ReactJS</a></li>
+                            <li><a href="#">Express</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item"><a href="/pricing.html">Pricing</a></li>
+            <li class="item"><a href="/about.html">About</a></li>
+            <div class="nav_background"></div>
+        </ul>
+    </nav>
+    <header class="parallax">
+        <div class="container center">
+            <div class="left column">
+                <img class="logo" src="/assets/images/logo.svg" alt="Logo">
+                <h1>Learn to Program</h1>
+                <div class="typewriter">
+                    <span>Code your own:</span>
+                    <div class="container">
+                        <div class="blinker-container">
+                            <span class="typewriter-text website">Website</span><span class="typewriter-text software">Software</span><span class="typewriter-text framework">Framework</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right getstarted column">
+                <!--                <h2>Get started!</h2>-->
+                <!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, odit.</p>-->
+                <a class="button" href="#start">Learn More..</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="info">
+            <div id="notsurewheretobegin" class="notsurewheretobegin">
+                <h1>Why learn coding with us?</h1>
+                <p>First, we copied the best system for learning to code.
+                    Some time later, we've (almost) perfected it.</p>
+            </div>
+            <div id="timeline" class="timeline">
+                <div class="step">
+                    <div class="picture">
+                        <img title="Choose what to learn" src="/assets/images/index/computer.svg" alt="Computer">
+                    </div>
+                    <div class="text">
+                        <h1>Choose what to learn</h1>
+                        <p>From building websites to analyzing data, the choice is yours. Not sure where to start? We'll point you in the right direction.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="picture">
+                        <img title="Learn by doing" src="/assets/images/index/computer.svg" alt="Computer">
+                    </div>
+                    <div class="text">
+                        <h1>Learn by doing</h1>
+                        <p>No matter your experience level, you'll be writing real, working code in seconds.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="picture">
+                        <img title="Get instant feedback" src="/assets/images/index/computer.svg" alt="Computer">
+                    </div>
+                    <div class="text">
+                        <h1>Get instant feedback</h1>
+                        <p>Your code will be executed and tested as soon as you submit it, so you always know if you're on the right track.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="picture">
+                        <img title="Put your learning into practice" src="/assets/images/index/computer.svg" alt="Computer">
+                    </div>
+                    <div class="text">
+                        <h1>Put your learning into practice</h1>
+                        <p>Apply your learning with real-world projects and test your knowledge with <a href="#">our project ideas</a>.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="picture">
+                        <img title="Get your dream job" src="/assets/images/index/computer.svg" alt="Computer">
+                    </div>
+                    <div class="text">
+                        <h1>Get your dream job</h1>
+                        <p>Coding skills have never been more in-demand. Learn everything you need up your career with <a href="#">our certificates</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="whattodo" class="whattodo">
+            <div class="container">
+                <div class="points">
+                    <span class="point">Tell us <span class="why">why</span> you want to learn to code</span>
+                    <span class="point">We’ll show you <span class="what">what</span> to learn</span>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="course column">
+                    <div class="title">
+                        <h1>Web Development</h1>
+                    </div>
+                    <div class="labels">
+                        <span class="label">HTML/CSS</span>
+                        <span class="label">Javascript</span>
+                    </div>
+                    <p>Master the languages of the web: HTML, CSS, and JavaScript. This course will prepare you to build basic websites and then build interactive web apps.</p>
+                </div>
+                <div class="course column">
+                    <div class="title">
+                        <h1>Programming</h1>
+                    </div>
+                    <div class="labels">
+                        <span class="label">Python</span>
+                        <span class="label">Command Line</span>
+                    </div>
+                    <p>Learn programming using Python, one of the hottest and fastest growing programming languages. This is a great introduction to the world of code.</p>
+                </div>
+                <div class="course column">
+                    <div class="title">
+                        <h1>Data Science</h1>
+                    </div>
+                    <div class="labels">
+                        <span class="label">Python</span>
+                        <span class="label">SQL</span>
+                    </div>
+                    <p>Learn SQL and Python and build the skills you need to analyze data. Great for anyone trying to get information about lots of data.</p>
+                </div>
+            </div>
+        </div>
+        <div id="changecareer" class="changecareer">
+            <div class="container">
+                <h1>It’s time to start learning to program today</h1>
+                <p>Because learning to code might be the easiest way to change your career.</p>
+                <a href="#">Get started</a>
+            </div>
+        </div>
+        <div class="support mobile_hidden">
+            <div class="container">
+                <div class="content">
+                    <h1>Support</h1>
+                    <p>Online text support is not available yet. Please come back later or send us an email at <a href="mailto:learntoprogram@maik.dev">learntoprogram@maik.dev</a>.</p>
+                    <p>You can also try to contact us using the <a href="/contact.html#form">contact form</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="column">
+            <h1>Info</h1>
+            <ul>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Hiring</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Need help?</h1>
+            <ul>
+                <li><a href="#">Customer service</a></li>
+                <li><a href="#">Group sales</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+            </ul>
+        </div>
+        <div class="column newsletter">
+            <h1>Stay connected</h1>
+            <p>Join over 10,000 people who recieve our bi-weekly newsletter.</p>
+            <div class="signup">
+                <input type="email" name="email" placeholder="Email Adress">
+                <button>Sign-Up</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="uparrow">
+                <a href="#top">&#8963;</a>
+            </div>
+            <div class="copyright">
+                <span class="copyright">© Maik de Kruif (maikka39). All rights reserved.</span>
+                <span class="splitmark">|</span>
+                <span class="not_affiliated">Learn to Program is not affiliated with any company.</span>
+                <span class="splitmark">|</span>
+                <span class="trademarks">Brand and product names mentioned are trademarks of their respective companies.</span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

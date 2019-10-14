@@ -172,13 +172,10 @@ body > .content > .column > .pricing > .column .choose {
     border-radius: 5px;
 }
 
-body > .content > .column > .pricing > .column.teams a {
-    color: inherit;
-}
-
 body > .content > .column > .pricing > .column.individuals {
     background: #ffffff;
     color: #000000;
+    order: 1;
     box-shadow: none;
 }
 
@@ -191,7 +188,6 @@ body > .content > .column > .pricing > .column.individuals:after {
     right: 0;
     bottom: 0;
     left: 0;
-    background: green;
     box-shadow: rgb(198, 198, 198) 0px 2.5px 20px;
 }
 
@@ -200,7 +196,11 @@ body > .content > .column > .pricing > .column.teams {
     color: #ffffff;
     margin-top: 5em;
     margin-left: -1.6em;
-    z-index: -1;
+    order: 2;
+}
+
+body > .content > .column > .pricing > .column.teams a {
+    color: inherit;
 }
 
 body > .content > .column > .pricing > .column.individuals .prices ul li:before {

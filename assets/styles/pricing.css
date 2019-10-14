@@ -413,12 +413,20 @@ body > .content .compare table .no:after {
         width: 90%;
     }
 
+    body > .content .title h1 {
+        font-size: 2.4em;
+    }
+
     body > .content .everyone h1 {
         font-size: 2.8em;
     }
 }
 
 @media screen and (max-width: 980px) {
+    body > .content .title h1 {
+        font-size: 2em;
+    }
+
     body > .content .pricing {
         display: flex;
         width: 90%;

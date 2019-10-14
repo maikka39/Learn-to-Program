@@ -71,6 +71,7 @@ body > nav > .items > .item {
     display: inline-block;
     height: 3.5em;
     padding: 0 0.1em;
+    transition: background-color 0.1s ease;
 }
 
 body > nav > .items > .item > a {
@@ -165,7 +166,7 @@ body > nav > .items > .item > .submenu > .column > ul {
 
 body > nav > .items > .item > .submenu > .column > ul > li {
     margin-right: 1em;
-    background-color: transparent;
+    transition: background-color 0.1s ease;
 }
 
 body > nav > .items > .item > .submenu > .column > ul > li:hover {

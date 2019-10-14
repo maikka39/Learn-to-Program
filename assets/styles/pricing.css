@@ -170,6 +170,8 @@ body > .content > .column > .pricing > .column .choose {
     font-size: 1.2em;
     padding: 1em 2em;
     border-radius: 5px;
+    border: solid transparent 2px;
+    transition: all 0.1s ease;
 }
 
 body > .content > .column > .pricing > .column.individuals {
@@ -235,4 +237,16 @@ body > .content > .column > .pricing > .column.individuals .choose {
 body > .content > .column > .pricing > .column.teams .choose {
     background: #ffffff;
     color: #ff6d00;
+}
+
+body > .content > .column > .pricing > .column.individuals .choose:hover {
+    background: #ffffff;
+    color: #ff6d00;
+    border: solid #ff6d00 2px;
+}
+
+body > .content > .column > .pricing > .column.teams .choose:hover {
+    background: #ff6d00;
+    color: #ffffff;
+    border: solid #ffffff 2px;
 }

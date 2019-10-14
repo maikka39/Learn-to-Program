@@ -26,6 +26,7 @@ body > .content .pricing {
     margin: 3.5em auto 0;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: row;
 }
 
 body > .content .pricing > .column {
@@ -260,7 +261,9 @@ body > .content .everyone {
     background: #ff6d00;
     color: #ffffff;
     text-align: center;
-    margin: 5em -12.5%;
+    margin: 5em 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 body > .content .everyone > .container {
@@ -278,9 +281,22 @@ body > .content .everyone p {
     margin: 0.5em auto;
 }
 
-body > .content .compare table {
-    margin-top: 3em;
+body > .content .compare {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > .content .compare .table {
     width: 100%;
+    overflow-x: auto;
+    margin: 3em 0;
+}
+
+body > .content .compare table {
+    margin: 0;
+    width: 100%;
+    min-width: 50em;
+    box-sizing: border-box;
     border-collapse: collapse;
     text-align: center;
     position: relative;
@@ -390,4 +406,47 @@ body > .content .compare table .no:after {
     font-size: 1.3em;
     font-weight: 700;
     color: #ff0000;
+}
+
+@media screen and (max-width: 1280px) {
+    body > .content > .column {
+        width: 90%;
+    }
+
+    body > .content .everyone h1 {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    body > .content .pricing {
+        display: flex;
+        width: 90%;
+        margin: 3.5em auto 0;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    body > .content .pricing > .column.teams {
+        margin: 3em 0;
+    }
+
+    body > .content .everyone h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    body > .content .pricing > .column .prices {
+        flex-direction: column;
+    }
+
+    body > .content .everyone h1 {
+        font-size: 2.2em;
+    }
+
+    body > .content .everyone p {
+        font-size: 1em;
+    }
 }

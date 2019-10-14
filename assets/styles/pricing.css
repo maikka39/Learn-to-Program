@@ -1,0 +1,238 @@
+body > .content > .column {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0 3em;
+}
+
+body > .content > .column > .title {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+
+body > .content > .column > .title h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+body > .content > .column > .title p {
+    margin-top: 0;
+    line-height: 1.4em;
+}
+
+body > .content > .column > .pricing {
+    display: flex;
+    width: 90%;
+    margin: 3.5em auto 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body > .content > .column > .pricing > .column {
+    flex-basis: 100%;
+    box-sizing: border-box;
+    box-shadow: rgb(198, 198, 198) 0px 2.5px 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+body > .content > .column > .pricing > .column h2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    padding: 1em;
+    border-bottom: solid #e2e2e2 1.2px;
+}
+
+body > .content > .column > .pricing > .column .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+body > .content > .column > .pricing > .column .prices > .column {
+    flex-basis: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .content > .column > .pricing > .column .prices .centered {
+    text-align: center;
+}
+
+body > .content > .column > .pricing > .column .prices h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+body > .content > .column > .pricing > .column .prices .price {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    height: 2em;
+    font-size: 2em;
+    font-weight: 700;
+    position: relative;
+}
+
+body > .content > .column > .pricing > .column .prices .price .contact {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.5em;
+    font-weight: 600;
+}
+
+body > .content > .column > .pricing > .column .prices .price .currency {
+    font-size: 1.3em;
+}
+
+body > .content > .column > .pricing > .column .prices .price .amount {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+body > .content > .column > .pricing > .column .prices .price .dot {
+    opacity: 0;
+    width: 0.1em;
+}
+
+body > .content > .column > .pricing > .column .prices .price .super {
+    font-size: 1em;
+}
+
+body > .content > .column > .pricing > .column .prices .price:first-letter {
+    font-size: 3em;
+}
+
+body > .content > .column > .pricing > .column .prices .time {
+    display: block;
+    height: 1.2em;
+    font-weight: 600;
+}
+
+body > .content > .column > .pricing > .column .prices ul {
+    list-style: none;
+    padding: 1em 0 2em 0;
+}
+
+body > .content > .column > .pricing > .column .prices ul li {
+    list-style: none;
+    line-height: 1.6rem;
+    vertical-align: middle;
+    padding-left: 1.4em;
+    position: relative;
+}
+
+body > .content > .column > .pricing > .column .prices ul li:before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #ff6d00;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.6rem;
+    vertical-align: middle;
+}
+
+body > .content > .column > .pricing > .column .prices ul li.unlimited:before {
+    content: "\221E";
+}
+
+body > .content > .column > .pricing > .column > .prices .top > p {
+    font-size: 0.8em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > .content > .column > .pricing .info {
+    color: #000000;
+    font-size: 0.8em;
+    width: 80%;
+    opacity: 0.8;
+    margin: 0.75em 0;
+    margin-top: auto;
+}
+
+body > .content > .column > .pricing > .column .choose {
+    display: block;
+    background: #ff6d00;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+body > .content > .column > .pricing > .column.teams a {
+    color: inherit;
+}
+
+body > .content > .column > .pricing > .column.individuals {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: none;
+}
+
+body > .content > .column > .pricing > .column.individuals:after {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: green;
+    box-shadow: rgb(198, 198, 198) 0px 2.5px 20px;
+}
+
+body > .content > .column > .pricing > .column.teams {
+    background: #ff6d00;
+    color: #ffffff;
+    margin-top: 5em;
+    margin-left: -2em;
+    z-index: -1;
+}
+
+body > .content > .column > .pricing > .column.individuals .prices ul li:before {
+    color: #ff6d00;
+}
+
+body > .content > .column > .pricing > .column.teams .prices ul li:before {
+    color: #ffffff;
+}
+
+body > .content > .column > .pricing > .column.individuals .info {
+    color: #000000;
+}
+
+body > .content > .column > .pricing > .column.individuals .info a {
+    color: #ff6d00;
+}
+
+body > .content > .column > .pricing > .column.teams .info {
+    color: #ffffff;
+}
+
+body > .content > .column > .pricing > .column.teams .info a {
+    color: #ffffff;
+}
+
+body > .content > .column > .pricing > .column.individuals .choose {
+    background: #ff6d00;
+    color: #ffffff;
+}
+
+body > .content > .column > .pricing > .column.teams .choose {
+    background: #ffffff;
+    color: #ff6d00;
+}

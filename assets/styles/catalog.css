@@ -134,7 +134,7 @@ body > .content > .catalog > .courses > .item .checks span:before {
     margin-right: 0.4em;
     background: #5e5e5e;
     -webkit-mask-size: cover;
-    -webkit-mask: url("/assets/images/ceckmark.svg");
+    -webkit-mask: url("../images/checkmark.svg");
 }
 
 body > .content > .catalog > .skills > .items {
@@ -266,7 +266,7 @@ body > .content > .catalog > .skills > .items .item > .info span:before {
     margin-right: 0.3em;
     background: #5e5e5e;
     -webkit-mask-size: cover;
-    -webkit-mask: url("/assets/images/time.svg");
+    -webkit-mask: url("../images/time.svg");
 }
 
 body > .content > .catalog > .languages > .items {

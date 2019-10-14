@@ -189,16 +189,16 @@ body > .content > .support .content:after {
     width: 1em;
     height: 1em;
     background: #ffffff;
-    /*    -webkit-mask: url("/assets/images/chat.svg") no-repeat 50% 50%;*/
-    /*    mask: url("/assets/images/chat.svg") no-repeat 50% 50%;*/
+    /*    -webkit-mask: url("../images/chat.svg") no-repeat 50% 50%;*/
+    /*    mask: url("../images/chat.svg") no-repeat 50% 50%;*/
     /*        background-repeat: no-repeat;*/
 
-    -webkit-mask-image: url("/assets/images/chat.svg");
+    -webkit-mask-image: url("../images/chat.svg");
     -webkit-mask-mode: match-source;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
 
-    mask-image: url("/assets/images/chat.svg");
+    mask-image: url("../images/chat.svg");
     mask-mode: match-source;
     mask-repeat: no-repeat;
     mask-size: cover;

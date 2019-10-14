@@ -288,8 +288,8 @@ body > .content .compare {
 
 body > .content .compare .table {
     width: 100%;
-    overflow-x: auto;
     margin: 3em 0;
+
 }
 
 body > .content .compare table {
@@ -419,6 +419,10 @@ body > .content .compare table .no:after {
 
     body > .content .everyone h1 {
         font-size: 2.8em;
+    }
+
+    body > .content .compare .table {
+        overflow-x: auto;
     }
 }
 

@@ -39,9 +39,12 @@ body > .content form label {
     font-size: 1.1em;
 }
 
-body > .content form input {
+body > .content form input,
+body > .content form textarea,
+body > .content form select {
     display: block;
     box-sizing: border-box;
+    background: #ffffff;
     width: 100%;
     padding: 0.5em 0.5em;
     border-radius: 5px;
@@ -49,6 +52,11 @@ body > .content form input {
     margin: 0.5em 0 1em;
     outline: none;
     font-size: 1.2em;
+}
+
+body > .content form textarea {
+    height: 7em;
+    resize: vertical;
 }
 
 body > .content form p {

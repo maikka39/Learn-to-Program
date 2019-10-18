@@ -105,6 +105,7 @@ body > .content > .columns {
     padding-top: 3.5em;
     height: calc(100vh - 3.5em);
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
 }
 
@@ -403,4 +404,67 @@ span.inlinecode {
 
 .code .colon {
     color: #efefef;
+}
+
+@media screen and (max-width: 980px) {
+    body > .content > .columns {
+        flex-wrap: wrap;
+    }
+
+    body > .content > .columns > .column {
+        flex-basis: 50%;
+        height: calc(80vh - 3.5em);
+    }
+
+    body > .content > .columns > .column:last-child {
+        flex-basis: 100%;
+        height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    body > .content > .columns {
+        padding-top: 0;
+    }
+
+    body > .content > .columns > .column {
+        flex-basis: 100%;
+        height: auto;
+        min-height: 80vh;
+    }
+
+    body > .content > .columns > .column:last-child {
+        min-height: unset;
+        height: 30vh;
+    }
+
+    body > nav > .logo {
+        background: unset;
+        width: unset;
+        text-align: start;
+        position: static;
+        left: 0;
+        transform: none;
+        visibility: hidden;
+    }
+
+    body > nav > .nav_toggle {
+        display: none;
+    }
+
+    body > nav > .info .notifications {
+        display: none;
+    }
+
+    body > nav > .info .timer {
+        display: none;
+    }
+
+    body > nav > .info .connected {
+        margin: 0 0.2em;
+    }
+
+    body > nav > .coursetitle {
+        z-index: -1;
+    }
 }

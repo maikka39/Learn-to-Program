@@ -1,0 +1,166 @@
+body > .content {
+    /*    height: calc(100vh - 8em);*/
+    min-height: 100vh;
+    padding-top: 3.5em;
+    padding-bottom: 8em;
+}
+
+body > .content .login {
+    margin: 3em auto;
+    width: 40vw;
+    box-sizing: border-box;
+    padding: 2em;
+    box-shadow: rgb(198, 198, 198) 0px 0px 10px;
+}
+
+body > .content .login form {}
+
+body > .content .login form hr {
+    border-color: #ff6d00;
+}
+
+body > .content .login form label {
+    display: block;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+}
+
+body > .content .login form input,
+body > .content .login form select {
+    display: block;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: solid #ff6d00;
+    margin: 0.5em 0 1em;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    position: relative;
+}
+
+body > .content .login form .password {
+    display: flex;
+    justify-content: space-between;
+}
+
+body > .content .login form .password input[type=password] {
+    width: calc(50% - 0.5em);
+    display: inline-block;
+}
+
+body > .content .login form .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.4em;
+    width: 1.4em;
+    background-color: #eeeeee;
+}
+
+body > .content .login form .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.styled_input {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    cursor: pointer;
+    user-select: none;
+    height: 1.4em;
+}
+
+body > .content .login form .customertype {
+    margin-top: 0.5em;
+}
+
+body > .content .login form label[for^=form_customertype] input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+body > .content .login form label[for^=form_customertype]:hover input[type=radio] ~ .checkmark {
+    background-color: #cccccc;
+}
+
+body > .content .login form label[for^=form_customertype] input[type=radio]:checked ~ .checkmark {
+    background-color: #ff6d00;
+}
+
+body > .content .login form label[for^=form_customertype] input[type=radio]:checked ~ .checkmark:after {
+    display: block;
+}
+
+body > .content .login form label[for^=form_customertype] .checkmark {
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50%;
+}
+
+body > .content .login form label[for^=form_customertype] .checkmark:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.25em;
+    height: 0.25em;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+body > .content .login form .terms {
+    margin-top: 1em;
+}
+
+body > .content .login form .terms * {
+    cursor: pointer;
+    line-height: 1.4em;
+    vertical-align: bottom;
+}
+
+body > .content .login form .terms input[type=checkbox] {
+    position: relative;
+    opacity: 0;
+    height: 1.4em;
+    width: 0;
+}
+
+body > .content .login form .terms:hover input[type=checkbox] ~ .checkmark {
+    background-color: #cccccc;
+}
+
+body > .content .login form .terms input[type=checkbox]:checked ~ .checkmark {
+    background-color: #ff6d00;
+}
+
+body > .content .login form .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.35em;
+    height: 0.7em;
+    border: solid #ffffff;
+    border-width: 0 0.2em 0.2em 0;
+    transform: rotate(45deg);
+}
+
+body > .content .login form .terms input[type=checkbox]:checked ~ .checkmark:after {
+    display: block;
+}
+
+body > .content .login form input[type=submit] {
+    cursor: pointer;
+    background: #ff6d00;
+    color: #ffffff;
+}
+
+body > footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

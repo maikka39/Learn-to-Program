@@ -365,6 +365,45 @@ body > .content > .catalog > .languages > span {
     margin: 0.6em auto;
 }
 
+body > .gotoeditor {
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3em 0;
+    font-size: 1.4em;
+    position: sticky;
+    bottom: 0;
+}
+
+body > .gotoeditor .container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body > .gotoeditor .container > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body > .gotoeditor .container > a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+    margin: 0 0.4em;
+    border-radius: 5px;
+    background: #ff6d00;
+    color: #ffffff;
+    border: solid #ff6d00 2px;
+    vertical-align: middle;
+    transition: all 0.05s ease;
+}
+
+body > .gotoeditor .container > a:hover {
+    background: #000000;
+    color: #ff6d00;
+}
+
 @media screen and (max-width: 1280px) {
     body > .content > .catalog > .courses > .item .image {
         flex-basis: 30%;

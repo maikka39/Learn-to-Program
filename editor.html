@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/loading.css" media="all">
+    <link rel="stylesheet" href="assets/styles/main.css" media="all">
+    <link rel="stylesheet" href="assets/styles/nav.css" media="all">
+    <link rel="stylesheet" href="assets/styles/header.css" media="all">
+    <link rel="stylesheet" href="assets/styles/editor.css" media="all">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://maik.dev/projects/learntoprogram/editor/">
+
+    <title>Editor | Learn to Program</title>
+    <!--
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="@maik_dev" />
+-->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div id="loading">
+        <div class="container">
+            <span class="load_icon"></span>
+        </div>
+    </div>
+    <nav>
+        <input class="nav_toggle_input hidden" id="nav_toggle_mobile" type="checkbox">
+        <label class="nav_toggle desktop_hidden" for="nav_toggle_mobile"></label>
+        <a class="logo" href="./">Learn to Program</a>
+        <a class="coursetitle" href="./catalog.html#languages-python2">Learn Python 2</a>
+        <div class="info">
+            <div class="connected">
+                <div class="container">
+                    <span>Connected to server</span>
+                </div>
+            </div>
+            <div class="timer"></div>
+            <div class="notifications"></div>
+            <a class="account" href="./login.html"><img src="./assets/images/logo.svg" alt="Account"></a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="columns">
+            <div class="column learn">
+                <div class="heading learn">Learn</div>
+                <div class="info">
+                    <span class="chapter">Learn Python: functions</span>
+                    <h1>Parameters and Arguments</h1>
+                    <p>
+                        Let’s take another look at the definition of the function <span class="inlinecode">square</span> from the previous exercise:
+                    </p>
+                    <code class="code">
+                        <span class="definition">def</span> <span class="function">square</span><span class="parentheses">(</span><span class="argument">n</span><span class="parentheses">)</span><span class="colon">:</span>
+                    </code>
+                    <p>
+                        Here, <span class="inlinecode">n</span> is a parameter of <span class="inlinecode">square</span>. A parameter is a variable that is an input to a function. It says, “Later, when <span class="inlinecode">square</span> is used, you’ll be able to input any value you want, but for now we’ll call that future value n.” A function can have any number of parameters.
+                    </p>
+                    <p>
+                        The values of the parameters passed into a function are known as the <em>arguments</em>. Recall in the previous example, we called: <span class="inlinecode">py square(10)</span>
+                    </p>
+                    <p>
+                        Here, the function <span class="inlinecode">square</span> was called with the parameter <span class="inlinecode">n</span> set to the argument <span class="inlinecode">10</span>.
+                    </p>
+                    <p>
+                        Typically, when you call a function, you should pass in the same number of arguments as there are parameters.
+                    </p>
+                    <p>
+                        To summarize:
+                    </p>
+                    <ul>
+                        <li>When defining a function, placeholder variables are called parameters.</li>
+                        <li>When using, or calling, a function, inputs into the function are called arguments.</li>
+                    </ul>
+                </div>
+                <div class="heading instructions">Instructions</div>
+                <div class="info">
+                    <ol>
+                        <li>
+                            <div class="item">
+                                <p>
+                                    Check out the function in the editor, <span class="inlinecode">power</span>. It should take two arguments, a base and an exponent, and raise the first to the power of the second. It’s currently broken, however, because its parameters are missing.
+                                </p>
+                                <p>
+                                    Replace the <span class="inlinecode">___</span>s with the parameters <span class="inlinecode">base</span> and <span class="inlinecode">exponent</span> and then call the <span class="inlinecode">power</span> function with a <span class="inlinecode">base</span> of <span class="inlinecode">37</span> and an <span class="inlinecode">exponent</span> of <span class="inlinecode">4</span>.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="heading hint">Stuck? Get a hint</div>
+            </div>
+            <div class="column editor">
+                <div class="filetitle">
+                    <span>Test.py</span>
+                </div>
+                <div class="editor">
+                    <div class="linenumbers">
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                        <span class="linenumber"></span>
+                    </div>
+                    <div class="editfield code">
+                        <textarea name="editfield" id="editfield">def power(___, ___):  # Add your parameters here!
+  result = base ** exponent
+  print "%d to the power of %d is %d." % (base, exponent, result)
+
+power(__, __)  # Add your arguments here!
+
+
+
+
+</textarea>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="run"></button>
+                    <button class="reset"></button>
+                    <button class="copy"></button>
+                    <a class="next" href="#">Next &gt;</a>
+                </div>
+            </div>
+            <div class="column output">
+                <div class="wintitle">Output</div>
+                <div class="output">
+                    <span class="error">SyntaxError: duplicate argument '___' in function definition (python, line 1)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="support mobile_hidden">
+            <div class="container">
+                <div class="content">
+                    <h1>Support</h1>
+                    <p>Online text support is not available yet. Please come back later or send us an email at <a href="mailto:learntoprogram@maik.dev">learntoprogram@maik.dev</a>.</p>
+                    <p>You can also try to contact us using the <a href="./contact.html#form">contact form</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>

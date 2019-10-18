@@ -37,6 +37,7 @@ body > .content form hr {
 body > .content form label {
     display: block;
     font-size: 1.1em;
+    letter-spacing: 0.05em;
 }
 
 body > .content form input,
@@ -51,6 +52,7 @@ body > .content form select {
     border: solid #ff6d00;
     margin: 0.5em 0 1em;
     outline: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
 }
 
@@ -59,8 +61,10 @@ body > .content form textarea {
     resize: vertical;
 }
 
-body > .content form p {
+body > .content form label[for=form_submit] {
     margin-top: 2em;
+    line-height: 1.4em;
+    margin: 2em 0 1em;
 }
 
 body > .content form input[type=submit] {

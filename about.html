@@ -118,29 +118,28 @@
                 <p>Please don't hesitate to contact us about any question.</p>
                 <hr>
                 <form action="#">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Your name" name="name" required>
+                    <label for="form_name">Name</label>
+                    <input type="text" placeholder="Your name" name="name" id="form_name" required>
 
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Your Email" name="email" required>
+                    <label for="form_email">Email</label>
+                    <input type="email" placeholder="Your Email" name="email" id="form_email" required>
 
-                    <label for="subject">Subject</label>
-                    <input type="text" placeholder="Where is your question about?" name="subject" required>
+                    <label for="form_subject">Subject</label>
+                    <input type="text" placeholder="Where is your question about?" name="subject" id="form_subject" required>
 
-                    <label for="country">Country</label>
-                    <select name="country">
+                    <label for="form_country">Country</label>
+                    <select name="country" id="form_country">
                         <option value="nl">Netherlands</option>
                         <option value="us">United States</option>
                         <option value="ca">Canada</option>
                         <option value="de">Germany</option>
                     </select>
 
-                    <label for="message">Message</label>
-                    <textarea type="text" placeholder="Your Message" name="message" required></textarea>
+                    <label for="form_message">Message</label>
+                    <textarea type="text" placeholder="Your Message" name="message" id="form_message" required></textarea>
 
-                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-                    <input type="submit">
+                    <label for="form_submit">By proceeding you agree to our <a href="#">Terms & Privacy</a>.</label>
+                    <input type="submit" id="form_submit">
                 </form>
             </div>
         </div>

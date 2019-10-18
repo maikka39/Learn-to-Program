@@ -164,3 +164,34 @@ body > footer {
     right: 0;
     bottom: 0;
 }
+
+@media screen and (max-width: 1280px) {
+    body > .content .login {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    body > .content .login {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body > .content .login {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    body > .content .login form .password {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    body > .content .login form .password input[type=password] {
+        width: 100%;
+        display: block;
+    }
+}
